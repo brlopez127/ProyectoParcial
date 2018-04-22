@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8089E712-2B7A-466B-82DF-000E9844CF36}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Proyecto.Logica</RootNamespace>
+    <AssemblyName>Proyecto.Logica</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\clsEstadoCampaña.cs" />
+    <Compile Include="BL\clsFaseTrato.cs" />
+    <Compile Include="BL\clsFuentePosibleClienteContacto.cs" />
+    <Compile Include="BL\clsFuentePosibleClienteTrato.cs" />
+    <Compile Include="BL\clsPropositoLlamada.cs" />
+    <Compile Include="BL\clsCalificacionPosibleCliente.cs" />
+    <Compile Include="BL\clsConexion.cs" />
+    <Compile Include="BL\clsCrearLlamada.cs" />
+    <Compile Include="BL\clsCrearTarea.cs" />
+    <Compile Include="BL\clsEstadoPosibleCliente.cs" />
+    <Compile Include="BL\clsEstadoTarea.cs" />
+    <Compile Include="BL\clsFuentePosibleCliente.cs" />
+    <Compile Include="BL\clsInfoCampaña.cs" />
+    <Compile Include="BL\clsInfoContacto.cs" />
+    <Compile Include="BL\clsInfoTrato.cs" />
+    <Compile Include="BL\clsNuevoEvento.cs" />
+    <Compile Include="BL\clsPosiblesClientes.cs" />
+    <Compile Include="BL\clsPrioridadTarea.cs" />
+    <Compile Include="BL\clsRelacionadoEvento.cs" />
+    <Compile Include="BL\clsRelacionadoLlamada.cs" />
+    <Compile Include="BL\clsSectorPosibleCliente.cs" />
+    <Compile Include="BL\clsTipoCampaña.cs" />
+    <Compile Include="BL\clsTipoTrato.cs" />
+    <Compile Include="BL\clsUsuarios.cs" />
+    <Compile Include="Models\clsCalificacionPosibleCliente.cs" />
+    <Compile Include="Models\clsCrearLlamada.cs" />
+    <Compile Include="Models\clsCrearTarea.cs" />
+    <Compile Include="Models\clsEstadoCampaña.cs" />
+    <Compile Include="Models\clsEstadoPosibleCliente.cs" />
+    <Compile Include="Models\clsEstadoTareas.cs" />
+    <Compile Include="Models\clsFaseTratos.cs" />
+    <Compile Include="Models\clsFuentePosibleCliente.cs" />
+    <Compile Include="Models\clsFuentePosibleClienteContacto.cs" />
+    <Compile Include="Models\clsFuentePosibleClienteTrato.cs" />
+    <Compile Include="Models\clsInfoCampaña.cs" />
+    <Compile Include="Models\clsInfoContacto.cs" />
+    <Compile Include="Models\clsInfoTrato.cs" />
+    <Compile Include="Models\clsNuevoEvento.cs" />
+    <Compile Include="Models\clsPosiblesClientes.cs" />
+    <Compile Include="Models\clsPrioridadTarea.cs" />
+    <Compile Include="Models\clsPropositoLlamada.cs" />
+    <Compile Include="Models\clsRelacionadoEvento.cs" />
+    <Compile Include="Models\clsRelacionadoLlamada.cs" />
+    <Compile Include="Models\clsSectorPosibleCliente.cs" />
+    <Compile Include="Models\clsTipoCampaña.cs" />
+    <Compile Include="Models\clsTipoTrato.cs" />
+    <Compile Include="Models\clsUsuarios.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
